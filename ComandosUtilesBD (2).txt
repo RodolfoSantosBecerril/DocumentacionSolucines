@@ -1,0 +1,29 @@
+create table codigos_arrayid( id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+prod_id int(6),
+producto varchar(40),
+cod_id int(6)
+)
+
+ALTER TABLE `codigos_arrayid` ADD `deleted_at` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ;
+ALTER TABLE `codigos_arrayid` ADD `created_at` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ;
+ALTER TABLE `codigos_arrayid` ADD `updated_at` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ;
+
+
+ALTER TABLE `codigos_arrayid` ADD `producto` varchar(40);
+ALTER TABLE `pedidos` ADD `envio` varchar(40) default 'PEDIDO';
+ALTER TABLE `codigos` ADD `afecta` varchar(30) default 'TODO';
+
+
+ALTER TABLE `codigos` ADD `tiempo` TIMESTAMP NULL DEFAULT NULL ;
+ALTER TABLE `codigos` ADD `usos` int(30) default 500;
+
+ALTER TABLE `pedidos` ADD `fecha_envio` TIMESTAMP NULL DEFAULT NULL ;
+ALTER TABLE `pedidos` ADD `fecha_entrega` TIMESTAMP NULL DEFAULT NULL ;
+
+ALTER TABLE 'pedidos' MODIFY envio varchar(40) DEFAULT 'RECIBIDO';
+
+SELECT ventas.user, ventas.pago, ventas.correo, usercurso.tiempo, usercurso.intentos FROM `ventas`, `usercurso` WHERE ventas.user = usercurso.user;
+
+SELECT ventas.user, ventas.pago, ventas.correo, usercurso.tiempo, usercurso.intentos, usercurso.calificacion FROM ventas   INNER JOIN usercurso  ON ventas.id = usercurso.idpago
+
+create table post( id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, slug varchar(255), title varchar(500), description varchar(6000), image_path varchar(255) )

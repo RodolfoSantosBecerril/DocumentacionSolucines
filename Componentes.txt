@@ -1,0 +1,11 @@
+1- Arduino Nano V3.0 (I used the chines version called Funduino Nano). (Este ya lo tengo no hace falta) 
+2- SD card Module.
+3- SD card.
+4- Bread Board. (Ya lo tengo no hace falta)
+5- four push Button .
+6- four 22K resistors.
+7- one 4.7K resistor.
+8- BC546B NPN transistor.
+9- Speaker.
+10- wires.
+https://www.instructables.com/Playing-Wave-file-using-arduino/

@@ -1,0 +1,101 @@
+ALTER TABLE `posts` ADD `deleted_at` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ;
+ALTER TABLE `posts` ADD `created_at` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ;
+ALTER TABLE `pedidos` ADD `pdf_path` varchar(255) DEFAULT NULL ;
+ALTER TABLE "posts" DROP COLUMN "deleted_at";
+ALTER TABLE posts DROP COLUMN deleted_at;
+ALTER TABLE pedidos DROP COLUMN pdf_pa;
+ALTER TABLE posts DROP COLUMN created_at;
+ALTER TABLE tabla DROP COLUMN columna;
+ insert into posts (slug, title, description, image_path, user_id) values('xxx','xxx','xxx','xxx',1);
+ALTER TABLE Customer MODIFY Address char(100);
+ALTER TABLE products MODIFY vista_id bigint(20) unsigned;
+$download_link = link_to_asset('file/example.png');
+create table pedido_arrayid( id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+pedido_id int(6),
+producto VARCHAR(30)
+)
+create table contacto(id int(6) AUTO_INCREMENT PRIMARY KEY, name varchar(100), email varchar(100), asunto varchar(100), mensaje varchar(500));
+ALTER TABLE `pedido_arrayid` ADD `deleted_at` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ;
+ALTER TABLE `pedido_arrayid` ADD `updated_at` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ;
+ALTER TABLE pedido_arrayid DROP COLUMN field_list;
+ALTER TABLE codigo MODIFY descuento int(10);
+queondabicislocas@club.com
+Juanescutia7
+PAYPAL SANDBOX CUENTA
+sb-b0jwu6367365@personal.example.com
+System Generated Password:
+B;*+D/t6
+
+DELETE FROM products;
+DELETE FROM Subcategoria where IDSubc=9;
+return DB::table('files')->orderBy('upload_time', 'desc')->first();
+
+ALTER TABLE pedidos AUTO_INCREMENT = 0;
+ALTER TABLE `estados` ADD `costo_envio` int(10);
+ALTER TABLE `products_vista` ADD `subcat_id` int(10);
+ALTER TABLE `subcategoria` ADD `cat_id` int(10);
+ALTER TABLE `user` ADD `descuento` int(10);
+select id, name from products where name like 'punos';
+
+Categoria
+ Componentes
+ select id, name, category_id from products where name like 'punos%';
+Herramientas
+select id, name, category_id from products where name like 'Multi%' or name like 'Bolsa%';
+select id, name, category_id from products where category_id =7;
+
+Bombas
+select id, name, category_id from products where name like '%bomba%';
+
+Accesorios
+select id, name, category_id from products where name like 'rodillo%' or name like '%anfora%' or name like 'Lampara%' or name like 'soporte%';
+
+Lentes
+select id, name, category_id from products where name like 'lente%';
+
+select id, name, price, description, category_id, brand_id, size, image_path from products;
+
+select id, name from products_vista where name like 'PEDALES PLATAFORMA AMPLIA%';
+delete from products_vista where id =83 or id =84;
+delete from products_vista where id =87 or id =88 or id=89;
+delete from products_vista where id =92;
+delete from products_vista where id =44 or id =45 or id=46 or id=47;
+
+63 | PUNOS TERMOGRABADOS AZULES
+
+UPDATE products_vista SET  name = 'PEDALES PLATAFORMA AMPLIA' WHERE id=86;
+update users set descuento =0;
+update estados set costo_envio = 4 where id =4;
+ mysqldump -u root -p u946786992_bicislocas > u946786992_bicislocas.sql
+Env file
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=steinwizard22@gmail.com
+MAIL_PASSWORD=ocotitoguerrero
+MAIL_ENCRYPTION=null
+
+update products_vista set name = 'LICRA CON PROTECTOR' where id =4;
+CORREO DE BICIS LOCAS
+queonda@bicislocas.club
+juanescutia7
+Juanescutia7
+
+Nuevo correo de bicisLocas
+bicislocas01@gmail.com
+
+update products set image_path = 'pñ6.png' where id =66;
+
+ALTER TABLE products CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL;
+
+mysqldump -u root -p u946786992_bicislocas > u946786992_bicislocas1.sql
+ALTER TABLE `products` ADD `stock` int(10) DEFAULT 1;
+
+mysqldump -u root -p u946786992_bicislocas pedidos pedido_arrayid > pedidos.sql
+
+UPDATE codigos SET deleted_at = created_at + interval 1 day;
+
+DB::update('update codigos set fecha = created_at + interval ? day where id = ?, ["admin" , "active" , 1]);
+Aumentar un dia al timestamp
+
+SELECT * FROM codigos WHERE deleted_at <= CURDATE()

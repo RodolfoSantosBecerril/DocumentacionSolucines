@@ -1,0 +1,31 @@
+Instrucciones
+1 Abra el archivo HTML en un editor de texto, como el Bloc de notas de Windows.
+
+2 Crear un enlace a una imagen transparente, uno por un píxel GIF a añadiendo el siguiente código en el cuerpo de su archivo HTML:
+
+<Img src = "http://www.myserver.com/pixelclick.php?id=1&quot;/>
+
+Sustituir "? Id = 1" con el "id" único que desea utilizar para el sitio específico. Cada página web necesita un "id" separada para diferenciar entre ellos.
+
+3 Guarde y cierre el archivo.
+
+4 Crear un nuevo documento en su editor de texto.
+
+5 Crear un script PHP para manejar el código de seguimiento. Escriba el siguiente código en la parte superior del archivo vacío:
+
+<? Php
+header ( "Content-Type: image / gif");
+eco base64_decode ( "R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw ==");
+
+$ S = date ( "Ymd H: i: s"). ":". $ _SERVER [ 'REMOTE_ADDR']. ":" $ _ GET [ 'id'].. "\norte";
+file_put_contents ( "my_track_file.txt", $ s, FILE_APPEND);
+?>
+
+El script crea y envía la imagen GIF transparente con las funciones de "base64_decode" "cabecera" y. A continuación, crea una cadena que contiene la dirección IP del visitante, la fecha actual y el "id" para el sitio web remoto. Por último, se añade el texto de la cadena en un archivo de rastreo.
+
+6 Guarde el archivo PHP como "pixelclick.php" y cierre el editor de texto.
+
+7 Sube el archivo PHP en su servidor. Sube el archivo HTML al servidor remoto que desea realizar un seguimiento.
+
+Consejos y advertencias
+Asegúrese de que el script PHP no emitirá ningún dato antes de la llamada "cabecera".

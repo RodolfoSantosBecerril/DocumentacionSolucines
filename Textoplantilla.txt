@@ -1,0 +1,178 @@
+ 
+
+
+
+ <!--texto 1.1-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6"
+                style="padding-top: 40px; display: flex;
+
+/*this centers the text horizontally*/
+justify-content: center;
+
+/*this centers the text vertically*/
+align-items: center;">
+                <figure>
+                    <blockquote class="blockquote">
+                        <!--texto aleatorio-->
+
+                        <center>
+                            <p><strong class="display-6">
+                                       {{-- Titulo en mayusculas --}}
+                                </strong></p>
+
+                    </blockquote>
+                    </center>
+            </div>
+
+
+
+
+            <div class="col-12 col-lg-6" style="padding-top: 40px;  font-family: 'Century Gothic Thin', sans-serif;">
+                <figure>
+                    <blockquote class="blockquote">
+
+                        <div class="row g-0  ">
+
+                            <div class="col-1 "> <svg xmlns="http://www.w3.org/2000/svg" style="color:#2dcaf0;"
+                                    width="16" height="16" fill="currentColor" class="bi bi-check-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                </svg></div>
+                            <div class="col-11">
+                                {{-- comment --}}
+                                <br>
+                            </div>
+                            <div class="col-1 "> <svg xmlns="http://www.w3.org/2000/svg" style="color:#2dcaf0;"
+                                    width="16" height="16" fill="currentColor" class="bi bi-check-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                </svg></div>
+                            <div class="col-11">
+                                {{-- comment --}}
+                                <br>
+                            </div>
+
+                            <div class="col-1 "> <svg xmlns="http://www.w3.org/2000/svg" style="color:#2dcaf0;"
+                                    width="16" height="16" fill="currentColor" class="bi bi-check-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                </svg></div>
+                            <div class="col-11">
+                                {{-- comment --}}
+                            </div>
+
+                            <div class="col-1 "> <svg xmlns="http://www.w3.org/2000/svg" style="color:#2dcaf0;"
+                                    width="16" height="16" fill="currentColor" class="bi bi-check-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                </svg></div>
+                            <div class="col-11">
+                                {{-- comment --}}
+                            </div>
+
+
+                        </div>
+
+
+
+                    </blockquote>
+
+            </div>
+            <!--aqui acaba-->
+
+        </div>
+
+
+    </div>
+    <!---Texto 1.0--->
+    <div class="container-fluid " style="background-color:#f7f8fc ">
+        <div class="container " style="font-family: 'Century Gothic Thin', sans-serif;">
+            <p><strong>
+                    <h1 class="display-6">  {{-- titulo secundario. --}}</h1>
+
+                </strong></p>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
+                <div class="col " style="padding-top: 40px;">
+                    <figure>
+                        <blockquote class="blockquote">
+                            <!--texto aleatorio-->
+
+                            <div class="row g-0  ">
+                                <div class="col-1 "> <i class="bx bxs-circle" style="color:blue"></i></div>
+                                <div class="col-11  "> {{-- comment --}}<br>
+                                    {{-- comment --}}
+
+                                    <br>
+                                </div>
+
+                                <div class="col-1 "> <i class="bx bxs-circle" style="color:blue"></i></div>
+                                <div class="col-11  "> {{-- comment --}} <br>
+                                    {{-- comment --}}
+                                    <br>
+                                </div>
+
+                                <div class="col-1 "> <i class="bx bxs-circle" style="color:blue"></i></div>
+                                <div class="col-11  "> {{-- comment --}}<br>
+                                    {{-- comment --}}
+                                    <br>
+                                </div>
+
+                                <div class="col-1 "> <i class="bx bxs-circle" style="color:blue"></i></div>
+                                <div class="col-11  "> {{-- comment --}}<br>
+                                    {{-- comment --}}
+                                    <br>
+                                </div>
+
+
+                            </div>
+
+
+                        </blockquote>
+
+                </div>
+                <center>
+                    <div class="col-8" style="padding-top: 40px;"><img src="imagenes/2_MPOP_HORIZONTAL_SOMBRA.png"
+                            class="img-fluid" alt="img" id="imagen">
+                </center>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    @include('plantillas.contactoformulario')
+    </div>
+    <!-- Proyectos -->
+
+
+
+
+    <!-- Proyectos -->
+    <!-- Proyectos -->
+
+    <!---Comienza footer---->
+    @include('plantillas.footer2')
+</main>
+<script src="js/bootstrap.js" crossorigin="anonymous"></script>
+<script src="js/jsmanuel.js" crossorigin="anonymous"></script>
+<script src="js/animacionMarcas.js" crossorigin="anonymous"></script>
+<script src="js/index.bundle.min.js" crossorigin="anonymous"></script>
+<script src="js/lightbox.js" type="module" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+
+
+Problemas con la migración   Illuminate\Database\QueryException 
+Solución:
+https://aprendible.com/blog/como-solucionar-el-error-specified-key-was-too-long-error-en-laravel
+
+
+Solución 1
+ntenta modificando el engine de mysql en el archivo config/database.php
+
+
+'mysql' => [
+    ...
+    'engine' => 'InnoDB',
+]
+
+Solución 2
+Si por algún motivo no te funciona la solución 1, agrega la siguiente línea al archivo  app/Providers/AppServiceProvider.php
+
+
+use Illuminate\Support\Facades\Schema;
+
+public function boot()
+{
+    Schema::defaultStringLength(191);
+}
+
+NOTA!!! LARAVEL NO PUEDE MIGRAR CON ARGUMENTOS QUE CONTENGAN  DEFAULT

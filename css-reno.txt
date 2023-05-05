@@ -1,0 +1,580 @@
+ 
+
+/*imagen back*/
+.azul {
+  
+   background-image: url(../img/fondito.jpg);
+ 
+   background-position: center;
+   background-repeat: repeat-y;
+   background-size: contain;
+ }
+ /*espacio boton */
+ .espacio1{
+  padding: 10px;
+}
+/*css para el boton*/
+.btn-group button {
+  background-color: #479bff; /* Green background */
+  border: 1px  #95c5ff; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color:#95c5ff;
+}
+ /*en tres secciones tres imagenes*/
+.column {
+    float: left;
+    width: 33.33%;
+   background-color: #ffffff;
+    text-align: center;
+   
+
+  }
+  
+  .column1 {
+    float: left;
+    width: 25%;
+    background-color: #ffffff;
+    text-align: center;
+   
+
+    
+  }
+    /*segunda imagen alineación*/
+  .columna {
+    float:left;
+    width:  50%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+  }
+    /*izquierda y derecha de la segunda imagen*/
+  .left {
+    width: 25%;
+    margin: 84px;
+    text-align: justify;
+   
+  }
+  
+  .right {
+    width: 57%;
+  }
+    /*alinear con imagen principal*/
+.contain1{
+    max-width: 1295px;
+ 
+}
+ 
+  /*rows al centro*/
+ .row   {
+  justify-content: center;
+  padding-left: 0px;
+
+ } 
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+  
+  /*responsivo, vista en 1*/
+  @media screen and (min-width: 600px) {
+    .dos{
+      display:none;
+    }
+    
+  }
+    /*responsivo, vista en 1*/
+  @media screen and (max-width: 1420px) {
+   
+  
+  
+  .contain2{
+    max-width: 1348px ;
+  }
+  
+  }
+
+  @media screen and (max-width: 700px) {
+    .columna{
+      width: 100%;
+      background-color: #ffffff;
+    }
+    .uno{
+       display: none;
+    }
+    .dos{
+      display:block;
+      font-family: 'Lexend' ;
+	    font-weight:900;
+      font-size:30px;
+      text-align: center;
+      color:#ffffff;
+      margin: 50px;
+
+    }
+    .columna{
+      width: 100%;
+    }
+    
+    .column {
+      width: 100%;
+      
+    }
+    .column {
+   
+      
+      background-color: #ffffff;
+    }
+    .column1 {
+      width: 100%;
+      
+    }
+    .column1 {
+    
+
+      background-color: #ffffff;
+    }
+     
+    .espacio1{
+      padding: 15px;
+    }
+
+    .left {
+      width: 70%;
+      margin: 60px;
+      text-align: justify;
+     
+    }
+    
+    .right {
+      width: 85%;
+    }
+  }
+    /*tarjetas */
+  .card {
+    /*controlar el espacio entre imagenes*/
+  margin:10px;
+   text-align: center;
+   background-color: #ffffff;
+   border: #ffffff;
+   padding-top: 25px;
+   padding-left: 15px;
+   padding-right: 15px;
+ }
+
+
+  /*caja .col{
+ 
+    max-width: 1202px;
+     
+  }*/
+  
+  /*texto a la iquierda*/
+  p{
+    text-align: left;
+  }
+  /*Estilos de fuente*/
+  @font-face {
+		font-family: 'Lexend';
+		font-style: normal;
+		font-weight: 400;
+		
+		src: url(../font/Lexend-Bold.tff) format('truetype');
+	  
+	  }
+ 
+
+.one1 {
+	font-family: 'Lexend' ;
+	font-weight:900;
+  font-size:20px;
+  color:#032073;
+ 
+} 
+.uno  {
+	font-family: 'Lexend' ;
+	font-weight:900;
+  font-size:40px;
+  text-align: center;
+  color:#ffffff;
+   margin: 50px;
+
+ 
+}
+h1{
+margin: 15px;
+}
+.uni  {
+ 
+	font-family: 'Lexend' ;
+	font-weight:900;
+  font-size:15px;
+  color:#032073;
+  text-align: center;
+}
+ 
+.two2   {
+	font-family: 'Lexend' ;
+	font-weight: 600;
+    font-size: 10px;
+    color:#737373;
+    padding-top:20px;
+
+} 
+ 
+ 
+.three1{
+  width:90%;
+  font-family: 'Lexend' ;
+	font-weight: 600;
+    font-size: 12px;
+    color:#5e5e5e;
+}
+.four{
+  
+    font-family: 'Lexend' ;
+     
+    font-size: 17px;
+    color:#333333;
+ 
+}
+
+
+
+ 
+.oneSeccion1{
+	color: #aeecf7;
+  position: absolute;
+  width: 650px;
+  /*bottom: 172px;*/
+  top: calc(260px * var(--unidadConversionEscritorio));
+  /*right: 165px;*/
+  right:calc(165px * var(--unidadConversionEscritorio));
+}
+
+.oneSeccion1 p{
+	  font-family: 'LexendBold', sans-serif;
+	  
+	  font-weight: 700;
+	font-size: calc(52px * var(--unidadConversionEscritorio));
+}
+.oneSeccion1 span{
+	font-family: 'Lexend', sans-serif;
+	font-size: 17px;
+
+}
+.parent1 {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+ 
+  position: relative;
+ 
+}
+
+
+///////////////// estilo del que no es site
+
+ 
+
+/*imagen back*/
+.azul {
+  
+  background-image: url(../img/fondito.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+/*espacio boton */
+.espacio1{
+ padding: 10px;
+}
+/*css para el boton*/
+.btn-group button {
+ background-color: #479bff; /* Green background */
+ border: 1px  #95c5ff; /* Green border */
+ color: white; /* White text */
+ padding: 10px 24px; /* Some padding */
+ cursor: pointer; /* Pointer/hand icon */
+ float: left; /* Float the buttons side by side */
+ border-radius: 25px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-group button:not(:last-child) {
+ border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+ content: "";
+ clear: both;
+ display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+ background-color:#95c5ff;
+}
+/*en tres secciones tres imagenes*/
+.column {
+   float: left;
+   width: 33.33%;
+  background-color: #ffffff;
+   text-align: center;
+  
+
+ }
+ 
+ .column1 {
+   float: left;
+   width: 25%;
+   background-color: #ffffff;
+   text-align: center;
+  
+
+   
+ }
+   /*segunda imagen alineación*/
+ .columna {
+   float:left;
+   width:  50%;
+   padding: 0px;
+   display: flex;
+   align-items: center;
+   background-color: #ffffff;
+ }
+   /*izquierda y derecha de la segunda imagen*/
+ .left {
+   width: 26%;
+   margin: 84px;
+   text-align: justify;
+  
+ }
+ 
+ .right {
+   width: 60%;
+ }
+   /*alinear con imagen principal*/
+.contain1{
+   max-width: 1202px;
+   padding: 0px;
+}
+ /*rows al centro*/
+.row   {
+ justify-content: center;
+ 
+
+} 
+ /* Clear floats after the columns */
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+ 
+ /*responsivo, vista en 1*/
+ @media screen and (min-width: 600px) {
+   .dos{
+     display:none;
+   }
+   
+ }
+   /*responsivo, vista en 1*/
+ @media screen and (max-width: 700px) {
+   .columna{
+     width: 100%;
+     background-color: #ffffff;
+   }
+   .uno{
+      display: none;
+   }
+   .dos{
+     display:block;
+     font-family: 'Lexend' ;
+     font-weight:900;
+     font-size:30px;
+     text-align: center;
+     color:#ffffff;
+     margin: 50px;
+
+   }
+   .columna{
+     width: 100%;
+   }
+   
+   .column {
+     width: 100%;
+     
+   }
+   .column {
+  
+     
+     background-color: #ffffff;
+   }
+   .column1 {
+     width: 100%;
+     
+   }
+   .column1 {
+   
+
+     background-color: #ffffff;
+   }
+    
+   .espacio1{
+     padding: 15px;
+   }
+
+   .left {
+     width: 70%;
+     margin: 64px;
+     text-align: justify;
+    
+   }
+   
+   .right {
+     width: 85%;
+   }
+ }
+   /*tarjetas */
+ .card {
+   margin: 15px; /*controlar el espacio entre imagenes*/
+   text-align: center;
+   background-color: #ffffff;
+   border: #ffffff;
+   padding-top: 30px;
+ }
+
+ /*caja .col{
+
+   max-width: 1202px;
+    
+ }*/
+ 
+ /*texto a la iquierda*/
+ p{
+   text-align: left;
+ }
+ /*Estilos de fuente*/
+ @font-face {
+   font-family: 'Lexend';
+   font-style: normal;
+   font-weight: 400;
+   
+   src: url(../font/Lexend-Bold.tff) format('truetype');
+   
+   }
+
+
+.one1 {
+ font-family: 'Lexend' ;
+ font-weight:900;
+ font-size:20px;
+ color:#032073;
+
+} 
+.uno  {
+ font-family: 'Lexend' ;
+ font-weight:900;
+ font-size:40px;
+ text-align: center;
+ color:#ffffff;
+  margin: 50px;
+
+
+}
+h1{
+margin: 15px;
+}
+.uni  {
+
+ font-family: 'Lexend' ;
+ font-weight:900;
+ font-size:15px;
+ color:#032073;
+ text-align: center;
+}
+
+.two2   {
+  padding-top: 10px;
+ font-family: 'Lexend' ;
+ font-weight: 600;
+   font-size: 10px;
+   color:#737373;
+
+} 
+
+
+.three1{
+ font-family: 'Lexend' ;
+ font-weight: 600;
+   font-size: 12px;
+   color:#5e5e5e;
+}
+.four{
+
+   font-family: 'Lexend' ;
+    
+   font-size: 15px;
+   color:#333333;
+
+}
+
+
+
+
+.oneSeccion1{
+ color: #aeecf7;
+ position: absolute;
+ width: 650px;
+ /*bottom: 172px;*/
+ top: calc(260px * var(--unidadConversionEscritorio));
+ /*right: 165px;*/
+ right:calc(165px * var(--unidadConversionEscritorio));
+}
+
+.oneSeccion1 p{
+   font-family: 'LexendBold', sans-serif;
+   
+   font-weight: 700;
+ font-size: calc(52px * var(--unidadConversionEscritorio));
+}
+.oneSeccion1 span{
+ font-family: 'Lexend', sans-serif;
+ font-size: 17px;
+
+}
+.parent1 {
+ width: 100%;
+ height: 100%;
+ margin: auto;
+
+ position: relative;
+
+}
