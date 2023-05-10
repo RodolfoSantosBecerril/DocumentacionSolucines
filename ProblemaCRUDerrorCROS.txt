@@ -1,0 +1,40 @@
+PROBLEMA EN EL CRUD-  Clase de destino [Fruitcake\Cors\HandleCors] no existe
+
+
+Fruitcake CORS El mensaje de error "Clase de destino [Fruitcake\Cors\HandleCors] no existe" 
+generalmente ocurre cuando hay un problema con la instalación o configuración del paquete Fruitcake CORS en Laravel.
+
+Para resolver este problema, puede probar los siguientes pasos:
+
+Asegúrate de haber instalado correctamente el paquete Fruitcake CORS ejecutando el siguiente comando en el directorio de tu proyecto Laravel:
+
+intento
+
+Copiar código
+composer require fruitcake/laravel-cors
+Después de instalar el paquete, borre el caché de Laravel y los archivos de configuración ejecutando los siguientes comandos:
+
+
+Copiar código
+php artisan cache:clear
+php artisan config:clear
+
+Si el error persiste, es posible que deba volver a publicar el archivo de configuración del paquete. Ejecute el siguiente comando:
+
+
+
+Copiar código
+php artisan vendor:publish --provider="Fruitcake\Cors\CorsServiceProvider"
+
+Asegúrese de haber agregado correctamente el middleware CORS a su pila de middleware de Laravel. 
+Abra el app/Http/Kernel.phparchivo y verifique si la siguiente línea existe en la $middlewarematriz:
+
+
+
+Copiar código
+\Fruitcake\Cors\HandleCors::class,
+
+Finalmente, intente reiniciar su servidor web y acceder nuevamente a su aplicación Laravel.
+
+Si el problema persiste, puede ser útil revisar la documentación y el repositorio de GitHub del paquete 
+Fruitcake CORS para asegurarse de que está siguiendo los pasos correctos de instalación y configuración para su versión de Laravel.
